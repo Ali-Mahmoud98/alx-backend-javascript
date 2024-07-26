@@ -4,7 +4,7 @@ describe('Car', () => {
   test('should create a Car instance with given properties', () => {
     const car = new Car('Toyota', 'Camry', 'Red');
     expect(car._brand).toBe('Toyota');
-    expect(car._model).toBe('Camry');
+    expect(car._motor).toBe('Camry');
     expect(car._color).toBe('Red');
   });
 
@@ -13,9 +13,9 @@ describe('Car', () => {
     const clonedCar = originalCar.cloneCar();
 
     expect(clonedCar).toBeInstanceOf(Car);
-    expect(clonedCar._brand).toBe(undefined);
-    expect(clonedCar._model).toBe(undefined);
-    expect(clonedCar._color).toBe(undefined);
+    expect(clonedCar._brand).toBe(null);
+    expect(clonedCar._motor).toBe(null);
+    expect(clonedCar._color).toBe(null);
   });
 
   test('should create a new instance for cloneCar', () => {
@@ -31,9 +31,9 @@ describe('Car', () => {
     const clonedCar = originalCar.cloneCar();
 
     expect(clonedCar).toBeInstanceOf(Car);
-    expect(clonedCar._brand).toBe(undefined);
-    expect(clonedCar._model).toBe(undefined);
-    expect(clonedCar._color).toBe(undefined);
+    expect(clonedCar._brand).toBe(null);
+    expect(clonedCar._motor).toBe(null);
+    expect(clonedCar._color).toBe(null);
   });
 
   test('should handle symbol properties if present', () => {
