@@ -1,10 +1,7 @@
 export default class Car {
   constructor(brand = null, model = null, color = null) {
-    // eslint-disable-next-line no-underscore-dangle
     this._brand = brand;
-    // eslint-disable-next-line no-underscore-dangle
     this._model = model;
-    // eslint-disable-next-line no-underscore-dangle
     this._color = color;
   }
 
