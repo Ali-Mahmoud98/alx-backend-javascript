@@ -54,7 +54,7 @@ Promise.allSettled(promises).then((results) => {
 ### Difference Between `Promise.all` and `Promise.allSettled`
 
 - **`Promise.all`**:
-  - Waits for all promises to be fulfilled.
+  - **Waits for all promises to be fulfilled.**
   - If any promise is rejected, it immediately rejects with the reason of the first promise that rejects.
   - Useful when you need all promises to succeed and if one fails, the whole operation should be considered failed.
   
@@ -74,8 +74,8 @@ Promise.allSettled(promises).then((results) => {
   ```
 
 - **`Promise.allSettled`**:
-  - Waits for all promises to either fulfill or reject.
-  - Never short-circuits; always returns an array with the status and value/reason of each promise.
+  - **Waits for all promises to either fulfill or reject.**
+  - **Never short-circuits**; always returns an array with the status and value/reason of each promise.
   - Useful when you need to know the result of all promises, regardless of whether they succeeded or failed.
 
   ```javascript
