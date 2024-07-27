@@ -10,21 +10,22 @@ import handleProfileSignup from './6-final-user';
 console.log(handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
 // expected output: Promise { <pending> }
 
-let func = async () => {
-  const result = await handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg");
-  console.log(result);
-  // expected output:
-  //[ 
-  //  { 
-  //    status: 'fulfilled',
-  //    value: { firstName: 'Bob', lastName: 'Dylan' }
-  //  },
-  //  { 
-  //    status: 'rejected',
-  //    value: new Error('photo.jpg cannot be processed')
-  //      ...
-  //  }
-  //]
-};
+// test the following
+// let func = async () => {
+//   const result = await handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg");
+//   console.log(result);
+//   // expected output:
+//   //[ 
+//   //  { 
+//   //    status: 'fulfilled',
+//   //    value: { firstName: 'Bob', lastName: 'Dylan' }
+//   //  },
+//   //  { 
+//   //    status: 'rejected',
+//   //    value: new Error('photo.jpg cannot be processed')
+//   //      ...
+//   //  }
+//   //]
+// };
 
-func();
+// func();
